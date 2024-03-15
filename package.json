@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "challenge1": "cd challenge_1/ && npm start",
-    "test": "mocha"
+    "test": "mocha --recursive **/test/**/*.test.js"
   },
   "author": "vinicius-vasconcelos",
   "license": "ISC",

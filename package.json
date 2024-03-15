@@ -4,6 +4,7 @@
   "description": "Desafio iPag - Desenvolvedor(a) Júnior",
   "main": "index.js",
   "scripts": {
+    "challenge1": "cd challenge_1/ && npm start",
     "test": "mocha"
   },
   "author": "vinicius-vasconcelos",

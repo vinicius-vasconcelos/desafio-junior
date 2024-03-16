@@ -1,7 +1,7 @@
 {
   "name": "challenge_2",
   "version": "1.0.0",
-  "description": "Maior e Menor entre Três Números",
+  "description": "Exercício 2: Maior e Menor entre Três Números",
   "main": "app/index.js",
   "scripts": {
     "start": "node app/index.js",

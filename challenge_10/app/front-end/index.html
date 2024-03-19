@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesquisa GitHubs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <section class="section has-background-light">
+    <div class="container">
+      <form>
+        <div class="field mb-4">
+          <label class="label">Usuário</label>
+          <div class="control">
+            <input id="username" class="input" type="text" placeholder="ex: fulaninho-da-silva" required>
+          </div>
+        </div>
+
+        <button id="submit" class="button is-success">Pesquisar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" id="userInformation">
+    </div>
+  </section>
+
+  <script src="./js/fetch.js"></script>
+</body>
+
+</html>

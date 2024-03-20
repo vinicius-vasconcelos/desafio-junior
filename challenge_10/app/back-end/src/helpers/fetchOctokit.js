@@ -11,9 +11,12 @@ require('dotenv').config();
 const fetchWithOctokit = async (username) => {
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
     const { login, name, bio } = await getUserData(octokit, username);
     const repositoryArray = await getUserRepositories(octokit, username);
-    return { login, name, bio, repositories: repositoryArray.map(mapRepositoryData) };
+
+    const user = { login, name, bio, repositories: repositoryArray.map(mapRepositoryData) };
+    return user;
   } catch (error) {
     throw error;
   }
@@ -26,7 +29,7 @@ const getUserData = async (octokit, username) => {
 
 const getUserRepositories = async (octokit, username) => {
   const response = await octokit.paginate('GET /users/{username}/repos', { username, per_page: 100 });
-  return response.data;
+  return response;
 };
 
 const mapRepositoryData = ({ name, description, language, stargazers_count: stars }) => ({

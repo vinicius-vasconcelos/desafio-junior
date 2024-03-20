@@ -39,16 +39,11 @@ function displayUserInfo(data) {
 async function fetchData(username) {
   try {
     const response = await fetch(API_BASE_URL + username);
-    
-    if (!response.ok) {
-      if (response.status === 404) throw new Error('Usuário não encontrado.');
-      else throw new Error('Erro ao carregar dados do usuário.');
-    }
-    
     const userData = await response.json();
+    if (userData.error) throw userData.error;
     displayUserInfo(userData);
   } catch (error) {
-    displayError(error.message);
+    displayError(error);
   }
 }
 

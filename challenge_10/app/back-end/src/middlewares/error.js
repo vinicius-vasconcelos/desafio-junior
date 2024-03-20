@@ -1,4 +1,4 @@
-const errorMessages = {
+const messageStatusMapping = {
   404: 'Usuário não encontrado',
   400: 'Requisição inválida',
   401: 'Não autorizado',
@@ -8,7 +8,7 @@ const errorMessages = {
 const errorHandler = (error, req, res, next) => {
   if (error.response) {
     const { status } = error.response;
-    const errorMessage = errorMessages[status] || 'Erro desconhecido';
+    const errorMessage = messageStatusMapping[status] || 'Erro desconhecido';
     return res.status(status).json({ error: errorMessage });
   } else {
     return res.status(500).json({ error: 'Erro interno do servidor' });

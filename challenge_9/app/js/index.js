@@ -6,10 +6,10 @@ function clearsFields() {
 }
 
 function createOptionsInSelect(selectBox, totalOptions) {
-  for (let increment = 1; increment <= totalOptions; increment++) {
+  for (let i = 1; i <= totalOptions; i++) {
     const option = document.createElement('option');
-    option.innerText = `${increment}x`;
-    option.value = increment;
+    option.innerText = `${i}x`;
+    option.value = i;
     selectBox.appendChild(option);
   }
 }

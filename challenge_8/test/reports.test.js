@@ -70,4 +70,31 @@ describe('Estatísticas de Vendas', () => {
     });
   });
 
+  describe('Função getProductWithMaxRevenueByCountry', () => {
+    it('Deve retornar o tipo de produto com a maior receita para cada país', () => {
+      const dataArray = [
+        { 'Country': 'USA', 'Item Type': 'Electronics', 'Total Revenue': '1000' },
+        { 'Country': 'USA', 'Item Type': 'Books', 'Total Revenue': '2000' },
+        { 'Country': 'USA', 'Item Type': 'Electronics', 'Total Revenue': '3000' },
+        { 'Country': 'UK', 'Item Type': 'Books', 'Total Revenue': '1500' },
+        { 'Country': 'UK', 'Item Type': 'Clothing', 'Total Revenue': '2500' },
+      ];
+
+      const expectedResult = {
+        'USA': { itemType: 'Electronics', totalRevenue: 3000 },
+        'UK': { itemType: 'Clothing', totalRevenue: 2500 }
+      };
+
+      assert.deepStrictEqual(getProductWithMaxRevenueByCountry(dataArray), expectedResult);
+    });
+
+    it('Deve retornar um objeto vazio quando o array de dados de entrada é vazio', () => {
+      const dataArray = [];
+      const expectedResult = {};
+
+      assert.deepStrictEqual(getProductWithMaxRevenueByCountry(dataArray), expectedResult);
+    });
+
+    
+  });
 });

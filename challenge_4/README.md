@@ -6,7 +6,7 @@
 * O usuário deve tentar adivinhar o número com o mínimo de tentativas possível.
 * Dê dicas ao usuário, informando se o seu palpite está "acima", "abaixo" ou se ele adivinhou o número.
 
-## Como Executar 🐧
+### Como Executar 🐧
 
 > **⚠️ Atenção:** _É necessário ter o Node.js instalado em sua máquina! Caso não o tenha, você pode executá-lo com Docker. As instruções estão disponíveis no arquivo README.md da raiz do projeto._
 
@@ -24,4 +24,6 @@ npm start
 
 ### Utilização 🧑‍💻👩‍💻
 
-Utilize o terminal para inserir os dados de entrada, e para esse projeto, eu não crie os testes de unidade!
+Utilize o terminal para inserir os dados de entrada:
+
+![Executando aplicação](/img/challenge4.png)

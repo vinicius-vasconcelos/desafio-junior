@@ -9,15 +9,16 @@ openFile.open(fileName, extensionName)
     let report;
 
     report = reports.getAggregateSales(successData, ['Item Type']);
-    // console.log(report);
-    // console.log('\n|-------------------------|\n');
+    console.log(report);
+    console.log('\n|-------------------------|\n');
+    
     report = reports.getAggregateSales(successData, ['Item Type', 'Region']);
-    // console.log(report);
-    // console.log('\n|-------------------------|\n');
+    console.log(report);
+    console.log('\n|-------------------------|\n');
 
     report = reports.getProductWithMaxRevenueByCountry(successData);
-    // console.log(report);
-    // console.log('\n|-------------------------|\n');
+    console.log(report);
+    console.log('\n|-------------------------|\n');
 
   })
   .catch((failure) => console.log(failure))

@@ -23,7 +23,7 @@ docker-compose up -d
 
 - Após finalizar, será gerado um container chamado `node-app`, conforme mostrado na figura abaixo:
 
-![imagem de execução do container](/img/imgDocker.png)
+![Imagem de execução do container](/img/imgDocker.png)
 
 - Entre no container executando o comando abaixo:
 
@@ -31,7 +31,17 @@ docker-compose up -d
 docker exec -it node-app bash
 ```
 
-- Após esses passos, siga as instruções conforme descritas nos demais `README.md`...
+- Após esses passos, siga as instruções conforme descritas nos demais `README.md`, mas agora dentro do container:
+
+![Dentro do container](/img/imgDocker-init.png)
+
+- Para sair do container basta digitar `exit` e utilize o comando abaixo para derrubar o container:
+
+```bash
+docker-compose down
+```
+
+![Fora do container](/img/imgDocker-finish.png)
 
 ## Executando testes a partir da raiz 🌿
 

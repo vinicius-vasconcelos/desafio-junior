@@ -1,0 +1,14 @@
+{
+  "name": "challenge_4",
+  "version": "1.0.0",
+  "description": "Exercício 4: Jogo da Adivinhação",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js"
+  },
+  "author": "vinicius-vasconcelos",
+  "license": "ISC",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}

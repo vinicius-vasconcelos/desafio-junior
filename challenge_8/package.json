@@ -1,0 +1,18 @@
+{
+  "name": "challenge_8",
+  "version": "1.0.0",
+  "description": "Exercício 8: Estatísticas de Vendas",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "mocha"
+  },
+  "author": "vinicius-vasconcelos",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
+}

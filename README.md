@@ -2,30 +2,50 @@
 
 ## Introdução
 
-Bem-vindo(a) ao desafio de programação para desenvolvedores juniores da iPag! Este desafio foi projetado para testar suas habilidades de programação e lógica de programação, bem como sua capacidade de resolver problemas e criar soluções eficientes.
+- Dentro de cada diretório denominado `challenge_n`, há um arquivo `README.md` com indicações de como executar cada aplicação separadamente.
+- Todos os desafios foram feitos utilizando JavaScript, mais especificamente Node.js na versão `20.11.1`.
+- Os desafios construídos apenas com back-end possuem testes de unidade implementados. As instruções de execução estão em seus respectivos README.md.
+- Os desafios foram construídos no Linux Ubuntu `jammy 22.04.4 LTS`, por isso a utilização de conteinerização Docker.
+  - Docker version `25.0.4`;
+  - Docker Compose version `v2.24.5`
+- Através deste `README.md`, você conseguirá manipular as aplicações através dos scripts abaixo e também poderá executar todos os testes de uma vez.
+- Qualquer dúvida acerca do projeto, entrar em contato com: `viniciussouzav@gmail.com`.
 
-O desafio consiste em uma série de exercícios de programação que abrangem diferentes tópicos e conceitos, como cálculos matemáticos, manipulação de strings, leitura e escrita de arquivos, manipulação de arrays e objetos, requisições HTTP, entre outros.
+## Executando com Docker 🐳
 
-Você pode escolher entre PHP, Python ou JavaScript para resolver os exercícios.
+> **⚠️ Atenção:** _É necessário ter o Docker e o docker-compose instalados em sua máquina!_
 
-**Objetivo do Desafio:**
+- Suba o container utilizando o comando abaixo:
 
-* Demonstrar suas habilidades de programação e lógica de programação.
-* Criar soluções eficientes e funcionais para os problemas propostos.
-* Avaliar sua criatividade, organização e clareza na resolução dos exercícios.
+```bash
+docker-compose up -d
+```
 
-**Instruções:**
+- Após finalizar, será gerado um container chamado `node-app`, conforme mostrado na figura abaixo:
 
-* Leia atentamente a descrição de cada exercício antes de começar a resolvê-lo.
-* Escolha entre PHP, Python ou JavaScript para resolver os exercícios, e sinta-se à vontade para utilizar HTML e CSS se necessário.
-* Crie um repositório no GitHub para armazenar e compartilhar seu código.
-* Crie um arquivo `README.md` na raiz do repositório com as instruções para executar e testar seu código.
-* Crie um diretório para cada exercício, com um arquivo `README.md` contendo a descrição do exercício e o código fonte da solução.
-* Organize o código fonte e resolva os exercícios de forma clara, eficiente e organizada, com comentários explicativos se necessário.
-* Compartilhe seu repositório com a equipe da iPag para revisão e avaliação.
-* Esteja preparado(a) para explicar e discutir seu código durante a revisão.
-* Divirta-se e desafie-se com os exercícios de programação!
-* Boa sorte e bom trabalho!
+![imagem de execução do container](/img/imgDocker.png)
+
+- Entre no container executando o comando abaixo:
+
+```bash
+docker exec -it node-app bash
+```
+
+- Após esses passos, siga as instruções conforme descritas nos demais `README.md`...
+
+## Executando testes a partir da raiz 🌿
+
+- Com o Node.js ou Docker devidamente instalados em sua máquina, para instalar todas as dependências de cada `challenge_N`, executando o comando abaixo:
+
+```bash
+npm run install-all
+```
+
+- Para executar todos os testes de unidade, utilize:
+
+```bash
+npm test
+```
 
 ## Exercícios de Programação
 
@@ -35,10 +55,14 @@ Você pode escolher entre PHP, Python ou JavaScript para resolver os exercícios
 * Permita a entrada de dois números e a escolha da operação.
 * Exiba o resultado da operação na tela.
 
+![Exercício 1](img/challenge1.png)
+
 ### 2. Maior e Menor entre Três Números:
 
 * Escreva um programa que peça ao usuário três números.
 * Determine o maior e o menor número entre os três e exiba-os na tela.
+
+![Exercício 2](img/challenge2.png)
 
 ### 3. Área de Formas Geométricas:
 
@@ -46,11 +70,15 @@ Você pode escolher entre PHP, Python ou JavaScript para resolver os exercícios
 * O programa deve permitir o cálculo da área de um quadrado, retângulo, triângulo e círculo.
 * O usuário deve escolher a forma geométrica e informar os dados necessários para o cálculo da área.
 
+![Exercício 3](img/challenge3.png)
+
 ### 4. Jogo da Adivinhação:
 
 * Crie um programa que gere um número aleatório entre 1 e 100.
 * O usuário deve tentar adivinhar o número com o mínimo de tentativas possível.
 * Dê dicas ao usuário, informando se o seu palpite está "acima", "abaixo" ou se ele adivinhou o número.
+
+![Exercício 4](img/challenge4.png)
 
 ### 5. Validador de Senha:
 
@@ -58,11 +86,15 @@ Você pode escolher entre PHP, Python ou JavaScript para resolver os exercícios
 * A senha deve ter no mínimo 8 caracteres e conter pelo menos uma letra maiúscula, uma letra minúscula e um número.
 * Valide a senha e informe ao usuário se ela é válida ou não.
 
+![Exercício 5](img/challenge5.png)
+
 ### 6. Lista de Tarefas:
 
 * Crie um programa que permita ao usuário adicionar, remover e visualizar tarefas.
 * Cada tarefa deve ter descrição, prioridade e um status (pendente ou concluída).
 * O programa deve permitir a navegação, ordenação e edição da lista de tarefas.
+
+![Exercício 6](img/challenge6.png)
 
 ### 7. Manipulação e Comunicação de Objetos:
 
@@ -72,6 +104,8 @@ Você pode escolher entre PHP, Python ou JavaScript para resolver os exercícios
 * O programa deve exibir na tela as ações realizadas e o estado atual da TV.
 * Caso o controle selecionado não seja compatível com a TV, o programa deve exibir uma mensagem de erro.
 
+![Exercício 7](img/challenge7.png)
+
 ### 8. Estatísticas de Vendas:
 
 * Leia o arquivo em anexo "sales.csv" que contém dados de vendas agrupados por tipo e país.
@@ -79,6 +113,8 @@ Você pode escolher entre PHP, Python ou JavaScript para resolver os exercícios
   * Vendas (total de unidades vendidas, total de receita, custo total, lucro total) por tipo de produto.
   * Vendas por tipo de produto e região.
   * Tipo de produto com maior receita de cada país.
+
+  ![Exercício 8](img/challenge8.png)
 
 ### 9. Simulador de Financiamento:
 
@@ -93,8 +129,12 @@ Para este exercício utilize as seguintes fórmulas:
 * **Custo efetivo total**: `CET = (PMT * n) - PV`, onde `CET` é o custo efetivo total, `PMT` é o valor da parcela e `PV` é o valor total financiado.
 * **Taxa efetiva mensal**: `im = (1 + i)^(1/12) - 1`, onde `im` é a taxa de juros mensal efetiva e `i` é a taxa de juros nominal anual.
 
+![Exercício 90](img/challenge9.png)
+
 ### 10. Manipulação de API:
 
 * Utilizando a API REST do GitHub, desenvolva um script que faça uma requisição para obter os repositórios de um usuário e exiba as informações na tela.
 * O usuário deve informar o nome do usuário do GitHub.
 * O script deve exibir o nome, descrição, linguagem e quantidade de estrelas de cada repositório.
+
+![Exercício 10](img/challenge10.png)

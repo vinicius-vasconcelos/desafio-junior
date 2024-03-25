@@ -1,0 +1,15 @@
+{
+  "name": "desafio-junior",
+  "version": "1.0.0",
+  "description": "Desafio iPag - Desenvolvedor(a) Júnior",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "chmod +x install-all.sh && ./install-all.sh",
+    "test": "mocha --recursive **/test/**/*.test.js"
+  },
+  "author": "vinicius-vasconcelos",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
+}

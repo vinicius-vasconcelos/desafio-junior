@@ -1,0 +1,17 @@
+{
+  "name": "challenge_7",
+  "version": "1.0.0",
+  "description": "Exercício 7: Manipulação e Comunicação de Objetos",
+  "main": "app/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node app/index.ts"
+  },
+  "author": "vinicius-vasconcelos",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}

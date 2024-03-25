@@ -4,8 +4,7 @@
   "description": "Exercício 4: Jogo da Adivinhação",
   "main": "app/index.js",
   "scripts": {
-    "start": "node app/index.js",
-    "test": "mocha"
+    "start": "node app/index.js"
   },
   "author": "vinicius-vasconcelos",
   "license": "ISC",

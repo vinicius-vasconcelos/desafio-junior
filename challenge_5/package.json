@@ -1,0 +1,18 @@
+{
+  "name": "challenge_5",
+  "version": "1.0.0",
+  "description": "Exercício 5: Validador de Senha",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "mocha"
+  },
+  "author": "vinicius-vasconcelos",
+  "license": "ISC",
+  "dependencies": {
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
+}

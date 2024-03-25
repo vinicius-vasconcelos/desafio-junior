@@ -5,3 +5,33 @@
 * Escreva um programa que peça ao usuário uma senha.
 * A senha deve ter no mínimo 8 caracteres e conter pelo menos uma letra maiúscula, uma letra minúscula e um número.
 * Valide a senha e informe ao usuário se ela é válida ou não.
+
+### Como Executar 🐧
+
+> **⚠️ Atenção:** _É necessário ter o Node.js instalado em sua máquina! Caso não o tenha, você pode executá-lo com Docker. As instruções estão disponíveis no arquivo README.md da raiz do projeto._
+
+- Com o Node.js devidamente instalado em sua máquina, instale as dependências do projeto executando o comando abaixo:
+
+```bash
+npm i
+```
+
+- Após finalizar a instalação das dependências, execute o programa com o comando abaixo:
+
+```bash
+npm start
+```
+
+- Para executar os teste de unidade, execute o comando abaixo:
+
+```bash
+npm test
+```
+
+![Executando os testes da aplicação](/img/challenge5-test.png)
+
+### Utilização 🧑‍💻👩‍💻
+
+Utilize o terminal para inserir os dados de entrada:
+
+![Executando aplicação](/img/challenge5.png)

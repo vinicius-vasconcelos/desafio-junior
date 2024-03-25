@@ -5,7 +5,7 @@ async function main() {
   let guess;
   let message = '';
 
-  console.log('De 1 a 100, qual valor sorteado?', randomNumber);
+  console.log('De 1 a 100, qual valor sorteado?');
   guess = parseInt(await asyncQuestion('Palpite:'));
 
   while (guess !== randomNumber) {

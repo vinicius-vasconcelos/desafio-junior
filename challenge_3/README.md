@@ -9,6 +9,7 @@
 ## Como Executar 🐧
 
 > **⚠️ Atenção:** _É necessário ter o Node.js instalado em sua máquina! Caso não o tenha, você pode executá-lo com Docker. As instruções estão disponíveis no arquivo README.md da raiz do projeto._
+
 - Com o Node.js devidamente instalado em sua máquina, instale as dependências do projeto executando o comando abaixo:
 
 ```bash
@@ -21,12 +22,16 @@ npm i
 npm start
 ```
 
-- Para executar os testes unitários, execute o comando abaixo:
+- Para executar os teste de unidade, execute o comando abaixo:
 
 ```bash
 npm test
 ```
 
+![Executando os testes da aplicação](/img/challenge3-test.png)
+
 ### Utilização 🧑‍💻👩‍💻
 
-Utilize o terminal para inserir os dados de entrada.
+Utilize o terminal para inserir os dados de entrada:
+
+![Executando aplicação](/img/challenge3.png)

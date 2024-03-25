@@ -21,12 +21,16 @@ npm i
 npm start
 ```
 
-- Para executar os testes unitários, execute o comando abaixo:
+- Para executar os teste de unidade, execute o comando abaixo:
 
 ```bash
 npm test
 ```
 
+![Executando os testes da aplicação](/img/challenge2-test.png)
+
 ### Utilização 🧑‍💻👩‍💻
 
-Utilize o terminal para inserir os dados de entrada.
+Utilize o terminal para inserir os dados de entrada:
+
+![Executando aplicação](/img/challenge2.png)
